@@ -6,7 +6,7 @@ import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { RoadMapComponent } from './road-map/road-map.component';
 import { FeedbackComponent } from './feedback/feedback.component';
-import { CheckComponent } from './check/check.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -14,11 +14,11 @@ import { CheckComponent } from './check/check.component';
     HomeComponent,
     RoadMapComponent,
     FeedbackComponent,
-    CheckComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
