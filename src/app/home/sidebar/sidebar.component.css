@@ -1,0 +1,32 @@
+.sidebar {
+  border: 1px solid red;
+  height: 550px;
+  border-radius: 10px;
+}
+
+.sidebar-label {
+  height: 25%;
+  background-image: url(../../../assets/suggestions/desktop/background-header.png);
+  position: relative;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  border-radius: 10px;
+}
+
+.sidebar-label-title {
+  font-size: 20px;
+  font-weight: bold;
+  color: var(--white);
+}
+
+.sidebar-label-para {
+  color: var(--white);
+  font-size: 15px;
+}
+
+.sidebar-label div {
+  position: absolute;
+  bottom: 30px;
+  left: 20px;
+}

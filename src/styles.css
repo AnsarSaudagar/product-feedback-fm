@@ -14,7 +14,17 @@
   --orange: #F49F85;
 }
 
+* {
+  margin: 0;
+  padding: 0;
+}
+
 body {
   font-family: var(--jost-font),
     sans-serif;
+  background-color: var(--cream);
+}
+
+.flex {
+  display: flex;
 }
