@@ -12,7 +12,7 @@ export class AppComponent {
 
   ngOnInit(): void {
 
-    this.dataService.getData().subscribe(data => {
+    this.dataService.getData().subscribe((data: any) => {
       console.log(data);
     })
 
