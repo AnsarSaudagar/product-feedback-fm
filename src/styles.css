@@ -1,0 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+:root {
+  --jost-font: 'Jost';
+  --white: #ffffff;
+  --purple: #AD1FEA;
+  --blue-100: #62BCFA;
+  --blue-200: #4661E6;
+  --blue-dark-100: rgb(55, 63, 104);
+  --blue-dark-200: #3A4374;
+  --blue-gray: #647196;
+  --blue-cream: #F2F4FF;
+  --cream: #F7F8FD;
+  --orange: #F49F85;
+}
+
+body {
+  font-family: var(--jost-font),
+    sans-serif;
+}
