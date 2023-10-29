@@ -1,17 +1,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Jost:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
 
 :root {
   --jost-font: 'Jost';
   --white: #ffffff;
   --purple: #AD1FEA;
+  --violet: #8397F8;
   --blue-100: #62BCFA;
   --blue-200: #4661E6;
   --blue-dark-100: rgb(55, 63, 104);
   --blue-dark-200: #3A4374;
   --blue-gray: #647196;
   --blue-cream: #F2F4FF;
+  --blue-dark-cream: #CFD7FF;
   --cream: #F7F8FD;
   --orange: #F49F85;
+  --radius: 10px;
 }
 
 * {
@@ -28,3 +32,12 @@ body {
 .flex {
   display: flex;
 }
+
+.smooth {
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }

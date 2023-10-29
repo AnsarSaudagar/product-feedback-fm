@@ -1,9 +1,29 @@
 <div class="sidebar">
     <div class="sidebar-label">
         <div>
-
             <p class="sidebar-label-title">Frontend Mentor</p>
             <p class="sidebar-label-para">Feedback Board</p>
         </div>
     </div>
+    <div class="sidebar-modal" [ngClass]="obj">
+        <!-- <div class="sidebar-content flex"> -->
+        <div class="sidebar-content flex" >
+            <div class="sidebar-categories">
+                <app-sidebar-categories></app-sidebar-categories>
+            </div>
+            <div class="sidebar-categories">
+                <app-sidebar-roadmap></app-sidebar-roadmap>
+            </div>
+        </div>
+
+    </div>
+    <div class="icon-container">
+        <mat-icon class="icon" (click)="onClickNavBtn('cross')" [ngClass]="{show:!showIcon, hide:showIcon}">clear</mat-icon>
+        <mat-icon (click)="onClickNavBtn('hamburger')" [ngClass]="{show:showIcon, hide:!showIcon}" class="icon">dehaze</mat-icon>
+    </div>
+    <!-- <div class="icon-container">
+        <mat-icon class="icon" (click)="showIcon=true" [ngClass]="{show:!showIcon, hide:showIcon}">clear</mat-icon>
+        <mat-icon (click)="showIcon=false" [ngClass]="{show:showIcon, hide:!showIcon}" class="icon">dehaze</mat-icon>
+    </div> -->
+
 </div>

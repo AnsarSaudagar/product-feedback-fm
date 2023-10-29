@@ -1,0 +1,30 @@
+.main {
+    height: 100%;
+    max-width: 100%;
+    border-radius: var(--radius);
+    padding-left: 10px;
+    flex-wrap: wrap;
+    column-gap: 10px;
+    align-items: center;
+}
+
+.cat-btn {
+    background-color: var(--blue-cream);
+    height: fit-content;
+    width: fit-content;
+    border-radius: var(--radius);
+    padding: 5px 15px;
+    font-weight: 600;
+    color: var(--blue-200);
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.cat-btn:hover {
+    background-color: var(--blue-dark-cream);
+}
+
+/* For tablet */
+@media (max-width: 1024px) {
+    
+}

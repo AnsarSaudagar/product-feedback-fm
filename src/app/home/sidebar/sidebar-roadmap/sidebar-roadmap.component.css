@@ -1,0 +1,58 @@
+.main {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.roadmap-heading {
+    justify-content: space-between;
+    margin: 0 15px;
+
+}
+
+.roadmap-heading p {
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.roadmap-heading a {
+    color: var(--blue-200);
+}
+
+.roadmap-heading a:hover {
+    color: var(--violet);
+}
+
+ul li{
+    margin: 10px 0;
+}
+
+.roadmap-list{
+    margin: 0 30px;
+}
+
+.planned {
+    color: var(--orange);
+}
+
+.in-progress{
+    color: var(--purple);
+}
+
+.live{
+    color: var(--blue-100);
+}
+
+.title, .count{
+    color:var(--blue-gray);
+}
+
+li{
+    position: relative;
+}
+.count{
+    font-weight: bold;
+    position: absolute;
+    right: 0px;
+}
