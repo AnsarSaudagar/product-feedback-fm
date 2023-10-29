@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { DataService } from './services/data.service';
 
 @Component({
@@ -6,14 +6,21 @@ import { DataService } from './services/data.service';
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
-export class AppComponent {
+export class AppComponent implements OnInit{
 
+  roadmapCount = {};
+  allData = [];
   constructor(private dataService: DataService) { }
 
   ngOnInit(): void {
-
+    //This will get all the data from the api
     this.dataService.getData().subscribe((data: any) => {
-      console.log(data);
+      this.allData = data;
+    })
+
+    //This will get the roadmap count
+    this.dataService.getRoadmapCount().subscribe((roadmapCount:any)=>{
+      this.roadmapCount = roadmapCount;
     })
 
   }

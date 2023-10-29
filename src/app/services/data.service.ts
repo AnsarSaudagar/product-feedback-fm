@@ -17,4 +17,24 @@ export class DataService {
     return this.http.get<Product[]>('http://localhost:3000/productRequests');
   }
 
+  getRoadmapCount() {
+    return this.getData().pipe(
+      map((data: any) => {
+        const countObj: any = {
+          'planned': 0,
+          'in-progress': 0,
+          'live': 0
+        };
+
+        data.forEach((element:any) => {
+          if(element.status === 'planned') countObj['planned']++;
+          if(element.status === 'in-progress') countObj['in-progress']++;
+          if(element.status === 'live') countObj['live']++;
+        });
+
+        return countObj;
+      })
+    )
+  }
+
 }
